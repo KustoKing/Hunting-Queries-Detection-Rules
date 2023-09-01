@@ -23,7 +23,6 @@ EmailEvents
 | where AuthenticationDetails has_any("temperror","none","fail","softfail")
     and UrlCount > 0
 | extend B64 = base64_encode_tostring(RecipientEmailAddress)
-| extend AD = parse_json(AuthenticationDetails)
 | join kind=inner EmailUrlInfo on NetworkMessageId
 | where Url contains B64
 | project-away *1
