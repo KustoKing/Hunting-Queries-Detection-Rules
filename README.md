@@ -29,3 +29,4 @@ The queries in this repository are split into different categories. The MITRE AT
 - [Microosft 365 Defender External Attack Surface Management](./Microsoft%20365%20Defender%20External%20Attack%20Surface%20Management/)
 - [Microsoft Entra ID](./Microsoft%20Entra%20ID)
 - [Microsoft Sentinel](./Microsoft%20Sentinel)
+- [Vulnerability Management](./Vulnerability%20Management)
