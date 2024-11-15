@@ -58,9 +58,9 @@ AuditLogs
     TargetUser = tostring(TargetResources[2].userPrincipalName),
     TargetDisplayName = tostring(TargetResources[2].displayName),
     TargetRole = tostring(TargetResources[0].displayName),
-    InitatiatingId = tostring(InitiatedBy.user.id),
-    InitatiatingUser = tostring(InitiatedBy.user.userPrincipalName),
-    InitatiatingRole = tostring(InitiatedBy.user.displayName)
+    SourceId = tostring(InitiatedBy.user.id),
+    SourceUser = tostring(InitiatedBy.user.userPrincipalName),
+    SourceDisplayName = tostring(InitiatedBy.user.displayName)
 | parse AdditionalDetails with * 'ipaddr","value":"' IPAdress '"' *
 | project-away InitiatedBy, AdditionalDetails, TargetResources
 ```
